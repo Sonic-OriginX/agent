@@ -27,16 +27,16 @@ class AgentWalletSync:
     
     async def _get_token_ca(self, asset_id):
         match asset_id:
-            case "usdc":
-                return "0x94F0Fd09f425Be15C7Bc0575Aa71780A044039e3"
-            case "uni":
-                return "0x6c8D1fd3AA9F436CBA20E4b6A5aeDb1bf814A732"
-            case "weth":
-                return "0x3455b6B22cBD998512286428De8844CBFBcc06C2"
-            case "usdt":
-                return "0x7598099fFC36dCC3e96F3aB33f18E86F85ae7E44"
-            case "dai":
-                return "0x74A8Ee760959AF0B18307861e92769CfEcC42f9B"
+            case "s":
+                return "0xC42F6EBD1499c8099cbdde8f108c870fD7Baffa4"
+            case "os":
+                return "0xa99027852475c77bC3C340DB883e11632A5A172f"
+            case "ws":
+                return "0x09E49F7dB7369B5D36273f96Da18347968889134"
+            case "usdce":
+                return "0x038310f0F5971A025Ff40c0B0BDbC751965dCD72"
+            case "lbtc":
+                return "0xf7b6e1d2fE5C493b1A22e3E93A4c4DE2f1a9b85E"
     
     def swap(self, user_address, spender, token_in, token_out, amount):
         private_key = self.fetch_data(user_address)

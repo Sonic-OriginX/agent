@@ -100,29 +100,29 @@ class AgentWallet:
     
     async def _get_token_ca(self, asset_id):
         match asset_id:
-            case "usdc":
-                return "0x94F0Fd09f425Be15C7Bc0575Aa71780A044039e3"
-            case "uni":
-                return "0x6c8D1fd3AA9F436CBA20E4b6A5aeDb1bf814A732"
-            case "weth":
-                return "0x3455b6B22cBD998512286428De8844CBFBcc06C2"
-            case "usdt":
-                return "0x7598099fFC36dCC3e96F3aB33f18E86F85ae7E44"
-            case "dai":
-                return "0x74A8Ee760959AF0B18307861e92769CfEcC42f9B"
+            case "s":
+                return "0xC42F6EBD1499c8099cbdde8f108c870fD7Baffa4"
+            case "os":
+                return "0xa99027852475c77bC3C340DB883e11632A5A172f"
+            case "ws":
+                return "0x09E49F7dB7369B5D36273f96Da18347968889134"
+            case "usdce":
+                return "0x038310f0F5971A025Ff40c0B0BDbC751965dCD72"
+            case "lbtc":
+                return "0xf7b6e1d2fE5C493b1A22e3E93A4c4DE2f1a9b85E"
     
     async def _get_protocol_ca(self, protocol):
         match protocol:
-            case "uniswap":
-                return "0xa976c4930e253CE56Ff129404a95F0578345C113"
-            case "compoundv3":
-                return "0xd39ef51d10FAeE75FE6fe66537F3D8128Ec72dA5"
-            case "usdxmoney":
-                return "0xF50c64a2C422C6809e5BdbcF4Bb5af38D06a033a"
-            case "stargatev3":
-                return "0x60e78201ac487E5C382379dc8f9e39a896396728"
-            case "aavev3":
-                return "0x23218e77D017AD293496976A5ee9Eb3F3F5EF217"
+            case "silov2":
+                return "0xC8d619C991066233DC281564Ba8d076e785328CB"
+            case "origin protocol":
+                return "0xaC60B68dDc47938b4e27b0bBf8b3bb46Afa2619c"
+            case "eulerv2":
+                return "0xB5B9a84B4cEc5381D2F56cB3c05253E9bf060d72"
+            case "spectrav2":
+                return "0xd7256AeD9e1e04fD9dC5D6eAa38297C8A19C7EF8"
+            case "lombard finance":
+                return "0x6604Cdd55C119361B6890Bd7e9523e0772e0DC49"
     
     async def mint(self, user_address, asset_id, amount):
         amount = int(amount) * (10 ** 6)
